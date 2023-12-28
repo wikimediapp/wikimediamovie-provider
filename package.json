@@ -35,16 +35,6 @@
   "scripts": {
     "build": "vite build",
     "start": "node ./lib/index.umd.js"
-    "test": "vitest run",
-    "test:dev": "ts-node ./src/dev-cli.ts",
-    "test:watch": "vitest",
-    "test:integration": "node ./tests/cjs && node ./tests/esm",
-    "test:coverage": "vitest run --coverage",
-    "lint": "eslint --ext .ts,.js src/",
-    "lint:fix": "eslint --fix --ext .ts,.js src/",
-    "lint:report": "eslint --ext .ts,.js --output-file eslint_report.json --format json src/",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint"
   },
   "devDependencies": {
     "@types/crypto-js": "^4.1.1",
